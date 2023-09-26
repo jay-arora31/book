@@ -18,9 +18,8 @@ from django.urls import path ,include
 from bookapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.AddBook.as_view(), name='AddBook'),
-
-    path('ShowBook/',views.ShowBook.as_view(), name='ShowBook'),
+        path('',include('bookapp.urls')),
+ 
 
 
 ]
