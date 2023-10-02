@@ -45,6 +45,12 @@ class AddBook(TemplateView):
 
 ###-----------------------------------------------View Book and Search Book-----------------------------------------------------##
 
+def second(request):
+    return render(request,'book/secondpage.html')
+def third(request):
+    return render(request,'book/thirdpage.html')
+
+
 
 class ShowBook(TemplateView):
   template_name = 'book/showbooks.html'
